@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <!-- <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script> -->
+        <!-- Babel Library takes JSX and turn them into readable JS -->
+        <!-- <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+        <script src='dist/main.js' defer></script>
+    </head>
+    <body>
+        <div id='app'></div>
+    </body>
+</html>
+
+
+<!-- <script type = 'text/babel'>
+
+            const app = document.querySelector('#app');
+
+            class App extends React.Component {
+                constructor(){
+                    super();
+                    this.state = {
+                        items,
+                        message: ''
+                    };
+
+                    const inteval = setInterval(() => {
+                        items.push(Math.random());
+                        this.setState({items})
+                        if (items.length === 10) {
+                            clearInterval(inteval);
+                            this.setState({message: 'Done'});
+                        }
+                    }, 500);
+                }
+                render() {
+                    const {items, message} = this.state;
+
+                    return (
+                        <div>
+                            <h2>Count is { items.length }</h2>
+                            <h3>{message}</h3>
+                            <ul>
+                                {items.map((item, inx) => <li key={inx}>{item}</li>)}
+                            </ul>
+                        </div>
+                    )
+                }
+            }
+
+            const items = [1,2];
+            ReactDOM.render(<App />, app);
+        </script> -->
